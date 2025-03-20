@@ -4,6 +4,9 @@ This is boilerplate is constructed as per my preference of workflow for quick fa
 
 ## Usage of the boilerplat
 
+1. From Settings > General: select the checkbox `Tempate  repository`.
+2. This will add a `use this template` button. When need to use this as a template, use the button.
+
 ---
 
 ## Project Overview
@@ -35,7 +38,8 @@ Ensure you have Docker installed on your machine. You can download it from [here
 
 #### Build Docker Image
 
-> [!IMPORTANT] > `Docker Daemon` or `Docker Desktop` must be running while building Docker Image.
+> [!IMPORTANT]
+> `Docker Daemon` or `Docker Desktop` must be running while building Docker Image.
 
 Navigate to the root directory of the repo where the `Dockerfile` is located and run the following command to build the Docker image:
 
@@ -59,7 +63,8 @@ docker run -dp 8000:8000 --name <project_name>-latest <project_name>:latest
 
 This will start the application in a Docker container. The application can be accessed at `http://localhost:8000` e.g. `127.0.0.1:8000`
 
-> [!NOTE] > `-dp` (`-d` & `-p`) tag runs the container in detached mode (in the background, terminal is available to use right away) and container port `8000` is mapped to local port `8000`.
+> [!NOTE]
+> `-dp` (`-d` & `-p`) tag runs the container in detached mode (in the background, terminal is available to use right away) and container port `8000` is mapped to local port `8000`.
 
 #### Stopping the Container
 
