@@ -1,6 +1,6 @@
 # fastapi-boilerplate
 
-This is boilerplate is constructed as per my preference of workflow for quick fastapi development.
+This boilerplate leverages route-service structure, is equipped with pre-commit hooks, github actions and dependabot and is constructed as per personal preference of workflow for quick API development.
 
 ## Usage of the boilerplat
 
