@@ -1,0 +1,8 @@
+fastapi==0.115.8
+uvicorn==0.34.0
+loguru==0.7.3
+black==25.1.0
+pre-commit==4.1.0
+isort==6.0.0
+mypy==1.15.0
+flake8==4.0.1
