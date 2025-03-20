@@ -5,4 +5,5 @@ class ResponseModel(BaseModel):
     """
     Represents generic response model
     """
+
     message: str

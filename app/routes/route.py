@@ -9,6 +9,7 @@ router = APIRouter(prefix="/group", tags=["group"])
 # Initiate the Service
 guest_service = Service()
 
+
 # Define the routes
 @router.get("/", response_model=ResponseModel)
 async def read_data() -> ResponseModel:
@@ -18,5 +19,5 @@ async def read_data() -> ResponseModel:
     Returns:
         ResponseModel: A list of all data.
     """
-    response = {'message': 'ok'}
+    response = {"message": "ok"}
     return ResponseModel(**response)

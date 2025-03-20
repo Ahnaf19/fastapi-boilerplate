@@ -20,5 +20,5 @@ class CustomNotFoundException(HTTPException):
             "error_message": f"data with id {id} not found",
             "id": id,
         }
-        # Call the parent constructor with a 404 status code and the detail message
+
         super().__init__(status_code=404, detail=detail)

@@ -1,5 +1,6 @@
 from loguru import logger
 
+
 class Service:
     """
     Service class to handle operations.

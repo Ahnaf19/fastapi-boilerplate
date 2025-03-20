@@ -1,10 +1,11 @@
+import unittest
+
 from fastapi.testclient import TestClient
-from loguru import logger
 
 from app.main import app
 
 
-class TestRouter:
+class TestRouter(unittest.TestCase):
     client: TestClient
 
     @classmethod
@@ -13,12 +14,11 @@ class TestRouter:
         Setup the test client and initial data for the tests.
         """
         cls.client = TestClient(app)
-    
+
     def test_read_data(self) -> None:
         """
         Test reading all data.
         """
         response = self.client.get("/group/")
-        assert response.status_code == 200
-        logger.debug(response.json())
-        assert response.json() == {'message': 'ok'}
+        self.assertEqual(response.status_code, 200)
+        self.assertDictEqual(response.json(), {"message": "ok"})
