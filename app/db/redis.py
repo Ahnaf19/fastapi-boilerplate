@@ -7,4 +7,4 @@ params = {
     "decode_responses": True,
 }
 
-redis = get_redis_connection()
+redis = get_redis_connection(**params)
