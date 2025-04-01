@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from app.pydantic_models.pydantic_model import ResponseModel
+from app.models.model import ResponseModel
 from app.services.service import Service
 
 # Initialize the router with a prefix and tags
