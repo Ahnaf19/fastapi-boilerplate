@@ -100,7 +100,9 @@ if __name__ == "__main__":
         "decode_responses": True,
     }
 
-    print(params)
+    # Do not print sensitive information such as passwords
+    safe_params = {k: (v if k != "password" else "****") for k, v in params.items()}
+    print(safe_params)
 
     redis_db = get_redis_om_client(**params)
     # logger.debug(f"Redis Connection Params in FastAPI: {redis_db.connection_pool.connection_kwargs}")
